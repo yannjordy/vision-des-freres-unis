@@ -1087,6 +1087,26 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .footer-bottom p { margin: 0; font-size: .85rem; color: rgba(255,255,255,.5); }
 .footer-tags { letter-spacing: .02em; }
 
+.footer-credits { padding-top: 1.5rem; }
+.footer-credits summary {
+  display: inline-block;
+  font-size: .78rem;
+  color: rgba(255,255,255,.45);
+  cursor: pointer;
+  transition: color .2s;
+  list-style: none;
+}
+.footer-credits summary::-webkit-details-marker { display: none; }
+.footer-credits summary::before { content: "+ "; color: rgba(249,115,22,.8); }
+.footer-credits details[open] summary::before { content: "− "; }
+.footer-credits summary:hover { color: rgba(255,255,255,.85); }
+.footer-credits ul { margin: .9rem 0 0; padding-left: 1.1rem; display: grid; gap: .35rem; }
+.footer-credits li { font-size: .74rem; line-height: 1.55; color: rgba(255,255,255,.4); }
+.footer-credits li a { color: rgba(125,211,252,.75); text-decoration: none; }
+.footer-credits li a:hover { text-decoration: underline; }
+.cr-photo { color: rgba(255,255,255,.62); font-weight: 500; }
+.credits-note { margin: .8rem 0 0; font-size: .7rem; color: rgba(255,255,255,.3); }
+
 /* ============================================================
    WHATSAPP FLOAT
    ============================================================ */
